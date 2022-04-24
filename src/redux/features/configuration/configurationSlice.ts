@@ -5,7 +5,7 @@ export const fetchConfigurations = createAsyncThunk(
   "configurations/fetchConfigurations",
   async (parr, thunkAPI) => {
     try {
-      const appID = process.env.REACT_APP_APPID || 1;
+      const appID = process.env.REACT_APP_APP_ID || 1;
       const response = await axiosInstance.get(`/configuration/${appID}/`);
 
       return response.data;
