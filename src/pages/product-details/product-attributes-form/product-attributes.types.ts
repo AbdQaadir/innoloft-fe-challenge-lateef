@@ -14,5 +14,5 @@ export type INITIALTYPE = {
   productId: string;
   categories: { id: number; name: string }[];
   businessModels: { id: number; name: string }[];
-  trl: string;
+  trl: { label: string; value: string };
 };

@@ -36,7 +36,7 @@ const initalValues: INITIALTYPE = {
   productId: "",
   categories: [],
   businessModels: [],
-  trl: "",
+  trl: { value: "", label: "" },
 };
 
 const ProductAttributesForm = ({
@@ -61,7 +61,7 @@ const ProductAttributesForm = ({
       productId,
       categories,
       businessModels,
-      trl: trl?.id,
+      trl: { label: trl.name, value: trl.id },
     }));
   }, [trl, productId, categories, businessModels]);
 
