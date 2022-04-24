@@ -63,6 +63,7 @@ const productSlice = createSlice({
       .addCase(fetchProductData.pending, (state: ProductRootType, action) => {
         state.error = null;
         state.isLoading = true;
+        state.submissionSuccess = false;
       })
       .addCase(
         fetchProductData.fulfilled,
